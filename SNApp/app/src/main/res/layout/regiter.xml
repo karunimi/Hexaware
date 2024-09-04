@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F7FA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <!-- Register Header -->
+        <TextView
+            android:id="@+id/registerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="24sp"
+            android:textColor="#1C3A57"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp" />
+
+        <!-- Subtext -->
+        <TextView
+            android:id="@+id/registerSubtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your new account"
+            android:textSize="14sp"
+            android:textColor="#7C7C7C"
+            app:layout_constraintTop_toBottomOf="@id/registerHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Full Name Input -->
+        <EditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="  Full Name"
+            android:paddingStart="10dp"
+            android:inputType="textPersonName"
+            android:textColor="#1C3A57"
+            app:layout_constraintTop_toBottomOf="@id/registerSubtext"
+            android:layout_marginTop="20dp" />
+
+        <!-- Mail ID Input -->
+        <EditText
+            android:id="@+id/mailIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="  Mail id"
+            android:paddingStart="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#1C3A57"
+            app:layout_constraintTop_toBottomOf="@id/fullNameInput"
+            android:layout_marginTop="10dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="  Password"
+            android:paddingStart="10dp"
+            android:inputType="textPassword"
+            android:textColor="#1C3A57"
+            app:layout_constraintTop_toBottomOf="@id/mailIdInput"
+            android:layout_marginTop="10dp" />
+
+        <!-- Login Button -->
+
+        <!-- Remember Me and Forgot Password -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            tools:layout_editor_absoluteX="38dp">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:backgroundTint="#1C3A57"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/passwordInput"
+            tools:layout_editor_absoluteX="49dp" />
+
+
+
+        <!-- Or Continue With Text -->
+        <TextView
+            android:id="@+id/orContinueWithText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or continue with"
+            android:textSize="14sp"
+            android:textColor="#7C7C7C"
+            app:layout_constraintBottom_toTopOf="@+id/socialMediaLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Social Media Buttons -->
+        <LinearLayout
+            android:id="@+id/socialMediaLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            app:layout_constraintBottom_toTopOf="@+id/signUpText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="-60dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/apple"
+                android:layout_marginEnd="20dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook" />
+        </LinearLayout>
+
+        <!-- Sign Up Text -->
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Already have an account? Sign up"
+            android:textColor="#1C3A57"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/rememberMeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:textColor="#7C7C7C"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:text="Forgot Password?"
+            android:textColor="#1C3A57"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="303dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fullNameEditText" type="id">Name</item>
+    <item name="passwordEditText" type="id">Pwd</item>
+    <item name="forgotPasswordTextView" type="id">forgotPwd</item>
+    <item name="registerNowTextView" type="id">Reg</item>
+</resources>

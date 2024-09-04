@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="40px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Horizon"
+        android:fontFamily="monospace"
+        android:textSize="100px"
+        android:layout_marginLeft="60px" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Skill up, fall in ove with your future"
+        android:textSize="40px"
+        android:layout_marginLeft="60px"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="75dp" />
+    <TextView
+        android:id="@+id/hi"
+        android:layout_marginTop="300px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hi!"
+        android:fontFamily="monospace"
+        android:textSize="80px"
+        android:layout_marginLeft="60px" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="400px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Maruana Anderson"
+        android:fontFamily="monospace"
+        android:textSize="80px"
+        android:layout_marginLeft="60px" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-502dp"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ethical Hacking"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="200px"
+                        android:layout_height="100px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="105dp"
+                        android:text="View"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="250px"
+                        android:layout_height="250px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/pen" />
+                    <View
+                        android:layout_width="350px"
+                        android:layout_height="315px"/>
+
+                    <View
+                        android:layout_width="250px"
+                        android:layout_height="250px"
+                        android:layout_marginLeft="0px"
+                        android:background="@drawable/com" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="750px">
+
+        <Button
+            android:id="@+id/ongoing"
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:text="Ongoing"
+            android:layout_marginStart="60px"
+            android:textSize="20sp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/rectangle"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/upcoming"
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:text="Upcoming"
+            android:layout_marginStart="510px"
+            android:tooltipText="200px"
+            android:textSize="20sp"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="340px"/>
+    </RelativeLayout>
+
+    <!-- LinearLayout to stack the cards vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="1260px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046">
+
+        <!-- First Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/courseImage1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/apple" /> <!-- Replace with your image resource -->
+
+                <TextView
+                    android:id="@+id/courseName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/courseImage1"
+                    android:layout_marginStart="96dp"
+                    android:text="Course Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coursePercentage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/courseName1"
+                    android:layout_marginStart="96dp"
+                    android:text="76%"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/coursePercentage1"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+                <!-- Percentage bar -->
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/coursePercentage1"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/Dblue" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Second Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/courseImage2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/apple" />
+
+                <TextView
+                    android:id="@+id/courseName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/courseImage2"
+                    android:layout_marginStart="96dp"
+                    android:text="Course Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coursePercentage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/courseName2"
+                    android:layout_marginStart="96dp"
+                    android:text="76%"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/coursePercentage2"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/coursePercentage2"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/Dblue" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Third Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/courseImage3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/apple" />
+
+                <TextView
+                    android:id="@+id/courseName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/courseImage3"
+                    android:layout_marginStart="96dp"
+                    android:text="Course Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coursePercentage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/courseName3"
+                    android:layout_marginStart="96dp"
+                    android:text="76%"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/coursePercentage3"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:layout_width="76dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/coursePercentage3"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/Dblue" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
